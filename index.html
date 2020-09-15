@@ -50,7 +50,7 @@
 
     async function predict() {
         console.log("start");
-        const model = await tf.loadLayersModel('../model/model.json');
+        const model = await tf.loadLayersModel('./model/model.json');
 
 
         image = tf.browser.fromPixels(canvas);
