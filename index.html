@@ -9,9 +9,12 @@
     <video playsinline autoplay></video>
     <button>Take snapshot</button>
     <canvas></canvas>
+    <span></span>
     <script>
       video = document.querySelector('video');
       canvas = document.querySelector('canvas');
+      button = document.querySelector('button');
+      
       canvas.width = 48;
       canvas.height = 48;
       canvas.style.filter = 'grayscale(1)';
@@ -29,6 +32,7 @@
         5: '😲', // surprise
         6: '😐' // neutral
       }
+      
 
     button.onclick = function() {
         w = video.videoWidth;
